@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #ee9ca7;
+}
+
+hr {
+    border-top: 5px solid black;
+    border-radius: 5px;
+}
+  
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.topnav a {
+    
+    color: black;
+    padding: 7px;
+    text-decoration: none;
+    font-size: 35px;
+}
+  
+.topnav a:hover {
+    
+    transition: .2s ease-in;
+    transform: translateY(-5px)
+}
+  
+.topnav a.active {
+    transform: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.topnav a.active:hover {
+    
+    transition: .2s ease-in;
+    transform: translateY(-5px)
+}
+
+
+
+.boxes {
+    
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.box1 {
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 350px;
+    height: 300px;
+    background-color: white;
+
+    
+}
+
+.box1 h1 {
+    margin-left: 15px;
+    
+}
+.box1 h2 {
+    margin-left: 10px;
+
+    font-size: 20px;
+    text-align: center;
+}
+
+.box1:hover {
+    transition: .2s ease-in;
+    transform: translateY(-5px)
+    
+}
+.box2 {
+    overflow: hidden;
+
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 350px;
+    height: 300px;
+    background-color: white;  
+}
+
+.box2:hover {
+    transition: .2s ease-in;
+    transform: translateY(-5px)
+    
+}
+
+.box2 h1 {
+    margin-left: 15px;
+}
+.box2 h2 {
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.box2 a {
+    font-size: 20px;
+}
+
+
+.box3 {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 350px;
+    height: 300px;
+    background-color: white;
+}
+
+.box3:hover {
+    transition: .2s ease-in;
+    transform: translateY(-5px)
+    
+}
+
+
+.box3 h1 {
+    margin-left: 15px;
+}
+.box3 h2 {
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1111px) {
+    .box1 {
+        overflow: auto;
+    }
+    .box2 {
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .box2 {
+        margin-top: 100px;
+    }
+    
+    .box3 {
+        margin-top: 100px; 
+    }
+}
